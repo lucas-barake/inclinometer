@@ -4,6 +4,9 @@ devDependencies:
   prettier:
     specifier: ^2.8.8
     version: 2.8.8
+  prettier-plugin-rust:
+    specifier: ^0.1.9
+    version: 0.1.9
   prettier-plugin-toml:
     specifier: ^0.3.1
     version: 0.3.1
@@ -27,6 +30,17 @@ packages:
     resolution: {integrity: sha512-NQky1HQyiAzxsxpq4Ppt47SYO2U3JLtmfs85QPf3kYSzGBjjp5AA8kqjH8hCjGFRpaQ781QOk1ragQIOkBgUTA==}
     dependencies:
       regexp-to-ast: 0.3.5
+    dev: true
+
+  /jinx-rust@0.1.6:
+    resolution: {integrity: sha512-qP+wtQL1PrDDFwtPKhNGtjWOmijCrKdfUHWTV2G/ikxfjrh+cjdvkQTmny9RAsVF0jiui9m+F0INWu4cuRcZeQ==}
+    dev: true
+
+  /prettier-plugin-rust@0.1.9:
+    resolution: {integrity: sha512-n1DTTJQaHMdnoG/+nKUvBm3EKsMVWsYES2UPCiOPiZdBrmuAO/pX++m7L3+Hz3uuhtddpH0HRKHB2F3jbtJBOQ==}
+    dependencies:
+      jinx-rust: 0.1.6
+      prettier: 2.8.8
     dev: true
 
   /prettier-plugin-toml@0.3.1:

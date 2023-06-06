@@ -1,4 +1,3 @@
-// Import the csv crate
 use csv::{ ReaderBuilder, WriterBuilder };
 use serde::{ Deserialize, Serialize };
 
@@ -13,7 +12,8 @@ struct Data {
 
 fn calculate_angle(data: &Data) -> f64 {
     let angle_rad = (data.a / G + data.uk).atan();
-    angle_rad.to_degrees()
+    let degrees = angle_rad.to_degrees();
+    degrees
 }
 
 fn read_data(filename: &str) -> Vec<Data> {
