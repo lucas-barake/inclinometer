@@ -5,6 +5,7 @@ const G: f64 = 9.81;
 
 #[derive(Debug, Deserialize, Serialize)]
 struct Data {
+    material: String,
     a: f64, // acceleration in m/s^2
     uk: f64, // coefficient of friction
     angle: Option<f64>, // angle in degrees
